@@ -8,20 +8,16 @@ const ageUser = parseInt(prompt('Inserisci la tua età'));
 let ticketPrice = 0.21 * kmUser;
 console.log(ticketPrice);
 
-//Definizione condizioni per valutare eventuale sconto
-    //SE ageUser < 18
-If (ageUser < 18) {
+//Definizione condizioni per valutare eventuale sconto in base all'età
+if (ageUser < 18) {
     ticketPrice = ticketPrice - (ticketPrice * 20 / 100);
     console.log(ticketPrice);
-   // console.log(ticketPrice.toFixed(2));
+    console.log(ticketPrice.toFixed(2));
+} else if (ageUser > 65) {
+    ticketPrice = ticketPrice - (ticketPrice * 40 / 100);
+    console.log(ticketPrice);
+    console.log(ticketPrice.toFixed(2));
+} else {
+    console.log(ticketPrice);
+    console.log(ticketPrice.toFixed(2));
 }
-    // modifico il valore della variabile ticketPrice con --> ticketPrice - (ticketPrice * 20 / 100)
-    // restituisco il valore di ticketPrice
-    // converto il risultato in una stringa con 2 decimali usando il metodo .toFixed(2)
-//ALTRIMENTI SE ageUser > 65
-    // modifico il valore della variabile ticketPrice con --> ticketPrice - (ticketPrice * 40 / 100)
-    // restituisco il valore di ticketPrice
-    // converto il risultato in una stringa con 2 decimali usando il metodo .toFixed(2)
-//ALTRIMENTI 
-    // restituisco il valore di ticketPrice
-    // converto il risultato in una stringa con 2 decimali usando il metodo .toFixed(2)
