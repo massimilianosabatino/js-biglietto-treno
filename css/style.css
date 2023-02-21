@@ -1,0 +1,26 @@
+:root {
+    --ms-main-color: #46EABF;
+}
+body {
+    background-color: var(--ms-main-color);
+    color:#fff;
+    /* padding: 150px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 {
+ /* font-size: 4.5rem; */
+ font-weight: bold;
+}
+
+#km::after {
+    content: ' km';
+}
+
+#age::after {
+    content: ' anni';
+}
+
+.card {
+    color: #666666;
+}

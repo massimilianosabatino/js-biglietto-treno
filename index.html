@@ -5,10 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prezzo biglietto treno</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- /Bootstrap -->
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Fontawesome -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Logo and Menu -->
+    <header class="container">
+        <div class="row border border-3 rounded">
+            <div class="col-9 pt-4 pb-2 border-end"><h1>TRAINinEXIST</h1></div>
+            <div class="col-3"></div>
+        </div>
+    </header>
+    <!-- /Logo and Menu -->
+    <body>
+        <main class="container border border-3 rounded">
+            <!-- Page title -->
+            <div class="row pt-5">
+                <div class="col-8 border-bottom border-3">
+                    <h2>Calcola il costo del tuo biglietto</h2>
+                </div>
+            </div>
+            <!-- Page title -->
+            <!-- User data -->
+            <div class="row justify-content-center">
+                <div class="col-8 mx-auto row justify-content-center container pt-5">
+                    <div class="col-12 border-bottom border-2 mb-3">Dati inseriti</div>
+                    <div class="col-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-train"></i>
+                                <div id="km">km</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-regular fa-id-card"></i>
+                                <div id="age">età</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /User data -->
+            <!-- Result -->
+            <div class="row pt-5 justify-content-end mb-5">
+                <div class="col-8 border-bottom border-3 offset-4 mb-4">
+                    <h3 class="text-center">ecco il tuo prezzo</h2>
+                </div>
+                <div class="col-3 text-center">
+                        <div class="card">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fa-solid fa-euro-sign me-1"></i>
+                                <div>Prezzo:</div>
+                                <div id="price" class="ms-2">€</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <div class="card">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fa-solid fa-percent me-1"></i>
+                                <div>Sconto:</div>
+                                <div id="discount" class="ms-2">%</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+    </body>
     <script src="js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- /Bootstrap JS -->
 </body>
 </html>
